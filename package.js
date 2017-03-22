@@ -1,13 +1,13 @@
 Package.describe({
-  name: 'flowkey:hotkeys',
-  summary: 'Easy and effective hotkeys for your app, powered by Mousetrap',
-  version: '1.2.0',
-  git: 'https://github.com/nerdmed/hotkeys.git'
+  name: 'geskep:hotkeys',
+  summary: 'Easy and effective hotkeys for your app, powered by Mousetrap and forked from nerdmed/hotkeys',
+  version: '1.0.0',
+  git: 'https://github.com/samuelluis/hotkeys.git'
 });
 
 Package.onUse(function(api, where) {
   api.versionsFrom('1.0');
-  api.use(['underscore', 'check', 'mousetrap:mousetrap@1.4.6'], 'client');
+  api.use(['underscore', 'jquery', 'check', 'geskep:mousetrap'], 'client');
   api.addFiles(['hotkeys.js'], 'client');
 
   api.export('Hotkeys');
